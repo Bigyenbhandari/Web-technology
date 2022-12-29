@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin:0;
+}
+body{
+    font-family: "Open sans", sans-serif;
+    color: white;
+}
+.two-col{
+    background: white;
+    display: flex;
+    min-height: 450px;
+}
+.left-column{
+    width: 50%;
+    background-color: rgb(24, 49, 24);
+    padding: 5%;
+}
+.right-column{
+    width: 50%;
+}
+h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+h2{
+    margin-bottom: 150px;
+}
+button{
+    margin-top: 40px;
+    background-color: orange;
+    border: none;
+    padding: 15px;
+    border-radius: 20px;
+}
+button:hover{
+    color:orange;
+    background-color: black;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
