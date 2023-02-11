@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,400&family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,400&family=Poppins:wght@200&family=Roboto&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+nav{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+    padding-top: 25px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 5px 15px;
+    
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+    font-size: 130%;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    left: 50%;
+    bottom:-5px;
+    position: absolute;
+    transform: translateX(-50%);
+    background: white;
+    transition: width 0.3s;
+}
+nav ul li a:hover::after {
+    width: 50%;
+    background: white;
+}
+#a{
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding-top: 5%;
+
+}
+#a h2{
+    font-size: 500%;
+    font-weight:900;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    background:url(back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+    
+  
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+#a h1{
+    font-family: 'Poppins', sans-serif;
+
+    
+}
+.footer{
+    text-align: center;
+    margin-top: 130px;
+}
+.footer h4{
+    color: white;
+    letter-spacing: 5px;
+}
+.fa{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 20px;
+    margin-bottom: 50px;
+    transition:all 0.4s;
+}
+.fa.fa-instagram:hover {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.fa.fa-linkedin:hover{
+    color:#0A66C2;
+}
+  

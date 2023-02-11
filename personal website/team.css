@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,400&family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,400&family=Poppins:wght@200&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,400&family=Nunito+Sans:wght@600&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+nav{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+    padding-top: 25px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 5px 15px;
+    
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+    font-size: 130%;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    left: 50%;
+    bottom:-5px;
+    position: absolute;
+    transform: translateX(-50%);
+    background: white;
+    transition: width 0.3s;
+}
+nav ul li a:hover::after {
+    width: 50%;
+    
+    
+}
+.team-title{
+    font-size: 25px;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 0.3em;
+}
+
+.team-content-wrapper{
+    color: #ffffff;
+    margin: 25px;
+    padding: 25px;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    display: flex;
+}
+
+.fangs-logo img{
+    height: 200px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.fangs-logo-name{
+    text-align: center;
+}
+.team-intro{
+    margin-left: 25px;
+    text-align: justify;
+}
+.second-cont{
+    color: #ffffff ;
+    letter-spacing: 0.1em;
+    margin: 25px;
+    padding: 25px;
+}
+.member-title{
+    letter-spacing: 0.3em;
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 20px;
+}
+
+.members{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    grid-row-gap: 60px;
+    margin-bottom: 100px;
+}
+.member-name{
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.member-name a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.member-about{
+    text-align: center;
+}
+
+
+@media screen and (max-width: 900px){
+    .team-content-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .members{
+        grid-template-columns: 1fr;
+    }
+
+}
+.footer{
+    text-align: center;
+    margin-top: 130px;
+}
+.footer h4{
+    color: white;
+    letter-spacing: 5px;
+}
+.fa{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 20px;
+    margin-bottom: 50px;
+    transition:all 0.4s;
+}
+.fa.fa-instagram:hover {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.fa.fa-linkedin:hover{
+    color:#0A66C2;
+}
+  
